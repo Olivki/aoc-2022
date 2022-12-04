@@ -16,7 +16,7 @@ fun main() {
         .sortedDescending()
         .take(3)
 
-    val testInput = readInput("Day01_Test")
+    val testInput = readTestInput("Day01")
     // p1
     check(part1(testInput) == listOf(6_000, 4_000, 11_000, 24_000, 10_000))
     check(part1(testInput).max() == 24_000)

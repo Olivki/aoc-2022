@@ -5,6 +5,8 @@ import kotlin.io.path.readLines
 
 fun readInput(name: String) = Path("./inputs/$name.txt").readLines()
 
+fun readTestInput(name: String) = readInput("${name}_Test")
+
 fun String.md5() = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteArray()))
     .toString(16)
     .padStart(32, '0')

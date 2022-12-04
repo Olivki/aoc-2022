@@ -27,7 +27,7 @@ fun main() {
         .chunked(3)
         .map { it.fold(it.first().uniqueItems) { acc, rucksack -> acc.intersect(rucksack.uniqueItems) }.single() }
 
-    val testInput = readInput("Day03_Test")
+    val testInput = readTestInput("Day03")
     // p1
     with(part1(testInput)) {
         with(this[0]) {

@@ -40,7 +40,7 @@ fun main() {
         }
         .toList()
 
-    val testInput = readInput("Day02_Test")
+    val testInput = readTestInput("Day02")
     // p1
     with(part1(testInput)) {
         check(this[0] == 8)
